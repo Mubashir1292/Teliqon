@@ -1,0 +1,10 @@
+/* above header div styling */
+.locationdetails{
+    background-color: #262C31;
+    width: 100%;
+    display: flex; 
+}
+.emailDetails{
+    color:#fff;
+    width: 20%;
+}
