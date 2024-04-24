@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     />
     <!-- custom css styling -->
-    <link rel="stylesheet" href="./src/assets/css/Customstyle.css" />
+    <link rel="stylesheet" href="src/assets/css/Customstyle.css" />
     <!-- font Awesome icons -->
     <link
       rel="stylesheet"
@@ -63,98 +63,17 @@
           class="headerLogo"
         />
       </div>
-      <div class="menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav menuItems">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                        Home
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown link
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown link
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+      <div class="menuItems">
+        <ul class="Links">
+          <li class="singleLink">
+            Home
+            <ul class="dropdownItems">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </header>
     <script
