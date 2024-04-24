@@ -1,10 +1,83 @@
-/* above header div styling */
-.locationdetails{
-    background-color: #262C31;
-    width: 100%;
-    display: flex; 
-}
-.emailDetails{
-    color:#fff;
-    width: 20%;
-}
+/* Above header */
+.header-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #262C31;
+        color: #fff;
+        height: 50px;
+      }
+      .header-container .locationAndEmail .location{
+        border-right: 1px solid #fff;
+        padding-right: 20px;
+      }
+      .emailText{
+        font-weight: 900;
+      }      
+      .emailText:hover{
+        color:#a9c200;
+        cursor: pointer;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+      }
+
+
+      .locationAndEmail{
+        display: flex;
+        gap: 20px;
+    }
+      .optionsAndSocials{
+        display: flex;
+        height:50px;
+        gap: 20px;
+      }
+      .header-container .optionsHeader {
+        display: flex;
+        gap: 20px;
+      }
+      .optionsAndSocials .optionsHeader{
+        height: 20px;
+        margin-top: 10px;
+      }
+      /* ? options and border */
+      .optionsAndSocials .optionsHeader .option{
+        border-right: 1px solid #fff;
+        padding-right: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+      .optionsAndSocials .optionsHeader .option:hover{
+        color:#A9C200;
+        cursor: pointer;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+      }
+
+      .optionsAndSocials .optionsHeader .option:last-child{
+            border: none;
+      }
+      .social-icons{
+        display: flex;
+        gap: 20px;
+        background-color: #A9C200;
+        cursor: pointer;
+        padding: 15px 20px 20px 20px;
+      }
+      .social-icons i{
+        font-size: 14px;
+      }
+      .social-icons i:hover{
+        color: #262C31;
+        cursor: pointer;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+      }
+      /* Actual Header */
+      .headerLogo{
+        width: 200px;
+        height: auto;
+      }
+      header nav div{
+        display: flex;
+        justify-content: space-between;
+      }
+
