@@ -17,3 +17,5 @@ function toggleSearchContainer() {
 
 searchIcon.addEventListener("click", toggleSearchContainer);
 //const quotesBtn = document.querySelector(".quotesBtn");
+// ! blog carousal
+ 

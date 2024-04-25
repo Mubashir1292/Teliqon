@@ -27,6 +27,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- blog Carousal -->
+    <link rel="stylesheet" href="src/assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="src/assets/css/owl.theme.default.min.css" />
   </head>
   <body>
     <div class="header-container">
@@ -192,11 +195,98 @@
       </div>
       <!-- Slider -->
       <!--blog Carousal Cards  -->
-      <div class="d-flex flex-column carousal">
-        <p class="text-center">Company Features</p>
+      <div class="blog-carousal">
+        <span>Company Features</span>
         <h1>Explore Our CallCenter And Consulting Features</h1>
-        
+        <div class="owl-carousel owl-theme blog-post">
+          <div class="item">
+            <div class="blog-content" data-aos="zoom-in" data-aos-delay="200">
+              <img src="src/images/blogCarousal/photo1.jpg" alt="Blog Post 1" />
+              <div class="blog-title">
+                <h3>Management Plan</h3>
+                <p>
+                  We Provide a range of services to help <br />
+                  & your team quickly get up & <br />
+                  running...
+                </p>
+                <span>Read More +</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="blog-content">
+              <img src="src/images/blogCarousal/photo1.jpg" alt="Blog Post 1" />
+              <div class="blog-title">
+                <h3>Management Plan</h3>
+                <p>
+                  We Provide a range of services to help <br />
+                  & your team quickly get up & <br />
+                  running...
+                </p>
+                <span>Read More +</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="blog-content">
+              <img src="src/images/blogCarousal/photo1.jpg" alt="Blog Post 1" />
+              <div class="blog-title">
+                <h3>Management Plan</h3>
+                <p>
+                  We Provide a range of services to help <br />
+                  & your team quickly get up & <br />
+                  running...
+                </p>
+                <span>Read More +</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="blog-content">
+              <img src="src/images/blogCarousal/photo1.jpg" alt="Blog Post 1" />
+              <div class="blog-title">
+                <h3>Management Plan</h3>
+                <p>
+                  We Provide a range of services to help <br />
+                  & your team quickly get up & <br />
+                  running...
+                </p>
+                <span>Read More +</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="blog-content">
+              <img src="src/images/blogCarousal/photo1.jpg" alt="Blog Post 1" />
+              <div class="blog-title">
+                <h3>Management Plan</h3>
+                <p>
+                  We Provide a range of services to help <br />
+                  & your team quickly get up & <br />
+                  running...
+                </p>
+                <span>Read More +</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="blog-content">
+              <img src="src/images/blogCarousal/photo1.jpg" alt="Blog Post 1" />
+              <div class="blog-title">
+                <h3>Management Plan</h3>
+                <p>
+                  We Provide a range of services to help <br />
+                  & your team quickly get up & <br />
+                  running...
+                </p>
+                <span>Read More +</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!--blog Carousal Cards  -->
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -204,5 +294,31 @@
       crossorigin="anonymous"
     ></script>
     <script src="/src/assets/javascript/index.js"></script>
+    <script src="src/assets/javascript/jquery3.6.0.js"></script>
+    <script src="src/assets/javascript/owl-carousal.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 30,
+          nav: false,
+          autoplay: true,
+          dots: false,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
