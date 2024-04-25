@@ -8,6 +8,14 @@
   height: 50px;
 }
 
+/* Responsiveness */
+@media only screen and (max-width: 1442px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .header-container .locationAndEmail .location {
   border-right: 1px solid #fff;
   padding-right: 20px;
@@ -93,6 +101,90 @@
   justify-content: start;
   gap: 300px;
 }
+.menuItems i {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 200px;
+    align-items: center;
+    padding-left: 5%;
+  }
+  .headerLogo {
+    width: 60%;
+    height: 50px;
+  }
+  .menuItems {
+    display: flex;
+    margin-left: -70px;
+  }
+  .Links {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -60px;
+  }
+  .Links li {
+    font-size: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 50px;
+  }
+  .menuItems i {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-container {
+    display: none;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 200px;
+    align-items: center;
+    padding-left: 5%;
+  }
+  .headerLogo {
+    width: 60%;
+    height: 50px;
+  }
+  .menuItems .Links {
+    display: none;
+    margin-left: -70px;
+  }
+  .quotesBtn {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .Links {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -60px;
+  }
+  .Links li {
+    font-size: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 50px;
+    height: 15px;
+  }
+  .menuItems i {
+    display: block;
+    position: absolute;
+    top: 38px;
+    right: 13px;
+    font-size: 25px;
+    background-color: rgb(240, 235, 235);
+    padding: 5px;
+    border-radius: 6px;
+  }
+}
 
 .headerLogo {
   width: 180px;
@@ -101,7 +193,6 @@
 .menuItems {
   display: flex;
   gap: 10px;
-  margin-left: -10px;
   margin-top: 20px;
 }
 
@@ -111,17 +202,20 @@
   padding-right: 10px;
   padding-top: 0;
   padding-bottom: 0;
+  margin-left: -50px;
   cursor: pointer;
   display: flex;
   flex-direction: row;
 }
 .Links .singleLink {
   border-right: 1px solid #000;
-  padding-left: 20px;
-  padding-right: 10px;
-  width: 80px;
-  font-weight: 900;
+  padding-left: 10px;
+  width: 90px;
+  font-weight: 800;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.Links .active {
+  color: #a9c200;
 }
 .Links .singleLink:nth-child(6) {
   border: 0;
@@ -137,7 +231,7 @@
   background-color: #f9f9f9;
   min-width: 200px;
   z-index: 1;
-  margin-top: 0;
+  margin-top: -1px;
   margin-left: -2%;
   transition: all;
   transition-duration: 1s;
@@ -157,6 +251,7 @@
   display: block;
   margin-left: -20%;
   border-bottom: 1px solid #808080;
+  transition: margin-left 0.8s ease-in; /* Added transition */
 }
 
 .dropdownItems li a {
@@ -166,6 +261,7 @@
 .dropdownItems li a:hover {
   font-weight: 800;
   color: #a9c200;
+  margin-left: 15px;
 }
 
 .singleLink:hover .dropdownItems {
@@ -176,9 +272,24 @@
   margin-left: 10px;
   font-weight: lighter;
 }
+/* Your existing CSS styles */
+
+/* Get A Quotes button */
 .quotesBtn {
+  position: relative;
   border: 1px solid #000;
-  border-radius: 20px;
+  margin-top: -10px;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -20px;
+  background-color: #fff;
+  overflow: hidden; /* Hide overflow */
+  transition: background-color 0.3s ease-in;
+}
+.quotesBtn:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .search-container {
@@ -199,8 +310,55 @@
   width: 200px;
   padding: 5px;
 }
-
 /* Close icon */
 .close-icon {
   cursor: pointer;
+}
+/* slider Images */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Text color */
+  border-radius: 10px; /* Rounded corners for the overlay */
+  color: #000;
+  width: 500px;
+}
+.carousel-caption h5 {
+  margin-bottom: 10px;
+  color: #a9c200;
+  text-align: left;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.carousel-caption p {
+  text-align: left;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.carousel-caption button {
+  border: 0;
+  background-color: #a9c200;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  display: flex;
+  align-self: flex-start;
+}
+/* carousal */
+.carousal {
+  margin-top: 50px;
+  background-color: red;
+  padding-top: 30px;
+}
+.carousal p {
+  color: #a9c200;
+}
+.carousal h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
