@@ -139,9 +139,16 @@
   z-index: 1;
   margin-top: 0;
   margin-left: -2%;
-  border-top: 2px solid #a9c200;
   transition: all;
   transition-duration: 1s;
+}
+.dropdownItems .dropdown {
+  background-color: #fff;
+  width: 200px;
+  height: 40px;
+  z-index: 1;
+  border-bottom: 2px solid #a9c200;
+  margin-left: -32px;
 }
 
 .dropdownItems li {
@@ -172,4 +179,28 @@
 .quotesBtn {
   border: 1px solid #000;
   border-radius: 20px;
+}
+
+.search-container {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 150px; /* Adjust according to your header height */
+  right: 160px; /* Adjust according to your layout */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Search input */
+.search-input {
+  border: none;
+  outline: none;
+  width: 200px;
+  padding: 5px;
+}
+
+/* Close icon */
+.close-icon {
+  cursor: pointer;
 }
