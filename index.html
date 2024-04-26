@@ -285,8 +285,122 @@
           </div>
         </div>
       </div>
-
+      <!-- Horizontal Line -->
+      <div class="line-with-icon">
+        <div class="line"></div>
+        <div class="icon"><i class="fa fa-plus-circle"></i></div>
+        <h6>Explore More Services</h6>
+      </div>
       <!--blog Carousal Cards  -->
+      <!-- About Us Section -->
+      <div class="About-Us">
+        <div class="Picture">
+          <img
+            src="src/images/About-Us/single-img-05.jpg"
+            alt="Single Image"
+            class="aboutImage"
+          />
+        </div>
+        <div class="details">
+          <p>About us</p>
+          <h1>We Have The Best Experts To Elevate Your Business.</h1>
+          <p>
+            We are a leading client call service provider, acknowledged as the
+            <br />
+            preferred partner by both clients and worldwide associates for its
+            <br />
+            integrity, reliability and discretion. Services we can provide
+            tailored <br />
+            inbound and outbound solutions while improving profitability,
+            increasing <br />
+            market share.
+          </p>
+          <div class="technology-Tools">
+            <div class="listTools">
+              <ul class="ToolsList">
+                <li>
+                  <i class="fa fa-check"></i>Technology and Tools Selection
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>We generate B2B Qualified leads
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>The Remote Policy and Procedures
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>Remote Readiness Survey Support
+                </li>
+              </ul>
+            </div>
+            <div class="years30">
+              <h1>30</h1>
+              <p>
+                Years of <br />
+                Experiance
+              </p>
+            </div>
+          </div>
+          <div class="founderAndSign">
+            <div>
+              <img src="src/images/founder/founder.jpg" alt="founder" />
+            </div>
+            <div>
+              <h4>Jhon Martin</h4>
+              <p>Chairnan and founder</p>
+            </div>
+            <div>
+              <img src="src/images/founder/author-sign.png" alt="" />
+            </div>
+          </div>
+          <div class="needHelp">
+            <h1>Need Help? Contact Me</h1>
+            <p>+123-456-7890 (or) info@example.com</p>
+          </div>
+        </div>
+      </div>
+      <!-- About Us Section -->
+      <!-- Testimonials -->
+      <!-- <div class="Testimonial">
+        <div class="testimonialImage">
+          <div class="details">
+            <p>TESTIMONIALS</p>
+            <h1>What Our Clients Say?</h1>
+          <div class="blog-carousal2">
+            
+      </div>
+      </div>
+      </div>
+          <div class="cards"></div>
+        </div> -->
+      <div class="Testimonial">
+  <div class="testimonialImage">
+    <div class="details">
+      <p>TESTIMONIALS</p>
+      <h1>What Our Clients Say?</h1>
+      <div class="small-carousel-container">
+        <div class="small-carousel">
+          <div class="small-carousel-item">Testimonial 1</div>
+          <div class="small-carousel-item">Testimonial 2</div>
+          <div class="small-carousel-item">Testimonial 3</div>
+          <!-- Add more items as needed -->
+        </div>
+      </div>
+      
+      <!-- Dots for navigation -->
+      <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <!-- Add more dots if you have more slides -->
+      </div>
+      
+      <!-- Add other sections and content as needed -->
+    </div>
+  </div>
+</div>
+
+      </div>
+      <!------------ Testimonials -------------->
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -301,8 +415,8 @@
         $(".owl-carousel").owlCarousel({
           loop: true,
           margin: 30,
-          nav: false,
           autoplay: true,
+          nav: false,
           dots: false,
           autoplayTimeout: 3000,
           autoplayHoverPause: true,
@@ -319,6 +433,38 @@
           },
         });
       });
+    // Custom carousel script
+ let carouselIndex = 0;
+const carouselItems = document.querySelectorAll('.small-carousel-item');
+const dots = document.querySelectorAll('.dot');
+
+// Update carousel display based on index
+function updateCarousel() {
+  const offset = carouselIndex * -30;
+  document.querySelector('.small-carousel').style.transform = `translateX(${offset}%)`;
+
+  // Update active dot
+  dots.forEach((dot, index) => {
+    console.log(dot);
+    if (index === carouselIndex) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+}
+
+// Add click event listeners to dots for manual navigation
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    carouselIndex = index;
+    updateCarousel();
+  });
+});
+
+// Initially update carousel
+updateCarousel();
+ 
     </script>
   </body>
 </html>

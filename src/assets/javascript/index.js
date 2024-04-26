@@ -18,4 +18,12 @@ function toggleSearchContainer() {
 searchIcon.addEventListener("click", toggleSearchContainer);
 //const quotesBtn = document.querySelector(".quotesBtn");
 // ! blog carousal
- 
+// * header styling
+window.addEventListener("scroll", function () {
+  var header = document.querySelector(".header");
+  if (window.scrollY > 10) {
+    header.classList.add("fixed-header");
+  } else {
+    header.classList.remove("fixed-header");
+  }
+});

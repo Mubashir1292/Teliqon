@@ -100,7 +100,20 @@
   align-items: center;
   justify-content: start;
   gap: 300px;
+  position: fixed;
+  top: 10;
+  background-color: #fff;
+  z-index: 1000;
 }
+/** fixed header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s; /* Add smooth transition */
+}
+
 .menuItems i {
   display: none;
 }
@@ -354,8 +367,16 @@
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
+.blog-carousal2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  background-color: #fff;
+}
+
 .blog-carousal span {
   text-align: center;
   text-transform: uppercase;
@@ -384,7 +405,7 @@
 .blog-post .item img {
   transition: transform 0.3s ease;
 }
-.blog-title h3:hover{
+.blog-title h3:hover {
   color: #a9c200;
   cursor: pointer;
 }
@@ -430,4 +451,212 @@
 }
 .blog-title span:hover {
   color: #a9c200;
+}
+/* services */
+.line-with-icon {
+  position: relative;
+  width: 70%; /* Adjust width as needed */
+  margin: -40px auto; /* Center horizontally */
+}
+
+.line {
+  border-top: 1px solid #d6d5d5; /* Adjust line style */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white; /* Adjust background color */
+  padding: 0 10px; /* Adjust padding as needed */
+}
+.icon i {
+  color: #a9c200;
+  font-size: 40px;
+}
+.line-with-icon h6 {
+  color: #000;
+  transition: color 0.3s ease-in;
+  position: absolute;
+  margin-top: 20px;
+  left: 40%;
+}
+.line-with-icon h6:hover {
+  color: #a9c200;
+}
+/* About Us */
+.About-Us {
+  width: 100%;
+  display: flex;
+  padding: 120px;
+  gap: 70px;
+}
+.About-Us .Picture img {
+  padding: 0px;
+}
+.About-Us .details p:first-child {
+  color: #a9c200;
+  margin-top: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.About-Us .details h1 {
+  margin-top: -9px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.About-Us .details p {
+  color: gray;
+  word-spacing: 1px;
+}
+.technology-Tools {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.technology-Tools .listTools {
+  display: flex;
+  flex-direction: column;
+}
+.ToolsList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.ToolsList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  color: gray;
+}
+.ToolsList li i {
+  font-size: 20px;
+  color: #a9c200;
+  margin-top: 2px;
+}
+.technology-Tools .years30 {
+  background-color: #a9c200;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.technology-Tools .years30 h1 {
+  color: #fff;
+  font-family: fantasy;
+  text-align: center;
+  margin-top: 10px;
+}
+.technology-Tools .years30 p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+/*? Founder and Signature */
+.founderAndSign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 40px;
+}
+.founderAndSign div:first-child {
+  border: 1px solid #f5f5f5;
+  border-radius: 45px 45px;
+  padding: 5px;
+}
+.founderAndSign div img:first-child {
+  border-radius: 40px 40px;
+}
+.founderAndSign div h4 {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.needHelp {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding-left: 10px;
+}
+.needHelp h1 {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.Testimonial {
+  position: relative; /* Set the parent div as a relative position */
+  width: 100%;
+  background-image: url("/src/images/Testimonial/row-bgimage-1.jpg");
+  height: 600px;
+  background-color: #363b40;
+  opacity: 0.9;
+  padding: 0;
+  background-size: cover;
+}
+
+.testimonialImage {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  align-items: center;
+  padding-top: 0;
+}
+.Testimonial .testimonialImage .details {
+  opacity: 1;
+}
+.Testimonial .testimonialImage .details p:first-child {
+  color: #a9c200;
+}
+.Testimonial .testimonialImage .details h1 {
+  color: #fff;
+}
+.Testimonial .testimonialImage .details p:last-child {
+  color: #fff;
+}
+/* blog carousal */
+.small-carousel-container {
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden; /* Hide overflow */
+  position: relative;
+  margin-right: 20px; /* Add some space between the carousel and other content */
+}
+
+.small-carousel {
+  display: flex;
+  width: 300%; /* Adjust width to accommodate all slides */
+  transition: transform 1s ease-in-out; /* Add smooth transition */
+}
+
+.small-carousel-item {
+  flex: 0 0 300px; /* Adjust width of each slide */
+}
+
+/* Style for dots */
+.dot-container {
+  text-align: center;
+  margin-top: 10px; /* Add some space between carousel and dots */
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333; /* Change color of active dot */
 }
