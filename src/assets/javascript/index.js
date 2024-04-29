@@ -1,7 +1,5 @@
 const searchIcon = document.querySelector(".fa-search");
 const searchContainer = document.getElementById("searchContainer");
-console.log(searchIcon.classList);
-
 function toggleSearchContainer() {
   searchContainer.style.display = searchIcon.classList.contains("fa-search")
     ? "block"
