@@ -687,6 +687,7 @@ header.header {
   display: flex;
   flex-direction: row;
 }
+
 .Links .singleLink {
   border-right: 1px solid #000;
   padding-left: 10px;
@@ -696,6 +697,9 @@ header.header {
 }
 .Links .active {
   color: #a9c200;
+}
+.Links .singleLink:nth-child(6){
+  color: #000;
 }
 .Links .singleLink:nth-child(6) {
   border: 0;
